@@ -499,6 +499,10 @@ Design can not be changed.</textarea>
     <span class="bnav-ico">&#128176;</span>
     <span>Expenses</span>
   </div>
+  <div class="bnav-item" id="nav_inventory" onclick="window.location.href='inventory.html'">
+    <span class="bnav-ico">&#128230;</span>
+    <span>Inventory</span>
+  </div>
   <div class="bnav-item" id="nav_profile" onclick="switchPage('profile')">
     <span class="bnav-ico">&#9881;</span>
     <span>Profile</span>
@@ -759,6 +763,8 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 import { getFirestore, collection, doc, setDoc, updateDoc, deleteDoc, onSnapshot, query, orderBy, serverTimestamp, getDoc, writeBatch } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
 // ══ FIREBASE CONFIG ══
+// ⚠️  REPLACE THESE VALUES WITH YOUR OWN FIREBASE PROJECT CONFIG
+// Get them from: https://console.firebase.google.com → Your Project → Project Settings → Your Apps
 const firebaseConfig = {
   apiKey: "AIzaSyBUmib9rrK1uNNbycMy57DvEIKoqN_1Jd4",
   authDomain: "i-dream-of-cake.firebaseapp.com",
